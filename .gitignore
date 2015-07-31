@@ -10,3 +10,9 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+Model/classes/tester.xcfg
+
+*.adfc_diagram
+
+ViewController/public_html/WEB-INF/temp/adf/styles/cache/skyros-v1-desktop-9po7jz--d-webkit-d-d-ltr-d--s-n-c.css

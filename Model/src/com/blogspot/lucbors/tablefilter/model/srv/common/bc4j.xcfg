@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="com.blogspot.lucbors.tablefilter.model.srv.HrService">
+      <AppModuleConfig name="HrServiceLocal" jbo.project="com.blogspot.lucbors.tablefilter.model.Model" ApplicationName="com.blogspot.lucbors.tablefilter.model.srv.HrService" DeployPlatform="LOCAL">
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="com.blogspot.lucbors.tablefilter.model.srv.HrService"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/HR@ORCL_VMDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="HrServiceShared" jbo.project="com.blogspot.lucbors.tablefilter.model.Model" ApplicationName="com.blogspot.lucbors.tablefilter.model.srv.HrService" DeployPlatform="LOCAL">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="com.blogspot.lucbors.tablefilter.model.srv.HrService"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/HR@ORCL_VMDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

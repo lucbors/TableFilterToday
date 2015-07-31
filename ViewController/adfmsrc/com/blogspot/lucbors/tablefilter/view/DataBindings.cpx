@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.1.3.13.26" id="DataBindings"
+             SeparateXMLFiles="false" Package="com.blogspot.lucbors.tablefilter.view" ClientType="Generic">
+  <pageMap>
+    <page path="/EmpsWithDefaultFilter.jsf" usageId="com_blogspot_lucbors_tablefilter_view_EmpsWithDefaultFilterPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="com_blogspot_lucbors_tablefilter_view_EmpsWithDefaultFilterPageDef"
+          path="com.blogspot.lucbors.tablefilter.view.pageDefs.EmpsWithDefaultFilterPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="HrServiceDataControl" Package="com.blogspot.lucbors.tablefilter.model.srv"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="HrServiceLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

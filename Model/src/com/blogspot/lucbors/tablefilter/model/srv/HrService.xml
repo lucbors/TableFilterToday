@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="HrService"
+  Version="12.1.3.13.26"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true">
+  <Properties>
+    <SchemaBasedProperties>
+      <LABEL
+        ResId="com.blogspot.lucbors.tablefilter.model.srv.HrService_LABEL"/>
+    </SchemaBasedProperties>
+  </Properties>
+  <ViewUsage
+    Name="AllEmployees"
+    ViewObjectName="com.blogspot.lucbors.tablefilter.model.vo.Employees"/>
+  <ViewUsage
+    Name="EmployeesInAdministrationDepartment"
+    ViewObjectName="com.blogspot.lucbors.tablefilter.model.vo.Employees">
+    <ViewCriteriaUsage
+      Name="EmployeesInAdministrationDepartment"
+      FullName="com.blogspot.lucbors.tablefilter.model.vo.Employees.EmployeesInAdministrationDepartment"/>
+  </ViewUsage>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="com.blogspot.lucbors.tablefilter.model.ModelBundle"/>
+  </ResourceBundle>
+</AppModule>

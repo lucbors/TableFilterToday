@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+    <managed-bean>
+        <managed-bean-name>EmpTable</managed-bean-name>
+        <managed-bean-class>com.blogspot.lucbors.tablefilter.view.beans.LucsTableBean</managed-bean-class>
+        <managed-bean-scope>pageFlow</managed-bean-scope>
+        <managed-property>
+            <property-name>queryBindingName</property-name>
+            <value>AllEmployeesQuery</value>
+        </managed-property>
+        <managed-property>
+            <property-name>defaultFilterCriteria</property-name>
+            <map-entries>
+                <map-entry>
+                    <key>HireDate</key>
+                    <value>TODAY</value>
+                </map-entry>
+            </map-entries>
+        </managed-property>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>AdminTable</managed-bean-name>
+        <managed-bean-class>com.blogspot.lucbors.tablefilter.view.beans.LucsTableBean</managed-bean-class>
+        <managed-bean-scope>pageFlow</managed-bean-scope>
+        <managed-property>
+            <property-name>queryBindingName</property-name>
+            <value>EmployeesInAdministrationDepartmentQuery</value>
+        </managed-property>
+        <managed-property>
+            <property-name>defaultFilterCriteria</property-name>
+            <map-entries>
+                <map-entry>
+                    <key>HireDate</key>
+                    <value>7/6/1994</value>
+                </map-entry>
+                <map-entry>
+                    <key>FirstName</key>
+                    <value>S</value>
+                </map-entry>
+            </map-entries>
+        </managed-property>
+    </managed-bean>
+</adfc-config>

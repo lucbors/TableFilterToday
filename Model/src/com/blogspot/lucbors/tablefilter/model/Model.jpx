@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+<!---->
+<JboProject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Model"
+  Version="12.1.3.13.26"
+  SeparateXMLFiles="true"
+  PackageName="com.blogspot.lucbors.tablefilter.model">
+  <DesignTime>
+    <Attr Name="_jprName" Value="../../../../../../Model.jpr"/>
+    <Attr Name="_jbo.TypeMapEntries" Value="OracleApps"/>
+    <Attr Name="_NamedConnection" Value="HR@ORCL_VM"/>
+    <Attr Name="_appModuleNames0" Value="com.blogspot.lucbors.tablefilter.model.srv.HrService"/>
+  </DesignTime>
+  <Containee
+    Name="eo"
+    PackageName="com.blogspot.lucbors.tablefilter.model.eo"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_EO" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="srv"
+    PackageName="com.blogspot.lucbors.tablefilter.model.srv"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_AM" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="vo"
+    PackageName="com.blogspot.lucbors.tablefilter.model.vo"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_VO" Value="true"/>
+    </DesignTime>
+  </Containee>
+</JboProject>
